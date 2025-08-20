@@ -5330,6 +5330,12 @@ npc開啟
   &lt;&lt;link &quot;回到抽屜&quot;&gt;&gt;&lt;&lt;goto &quot;拉開中抽屜&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/p&gt;
 </tw-passagedata><tw-passagedata pid="206" name="角色創建" tags="" position="775,0" size="100,100">
+
+&lt;&lt;link &quot;扣2點血&quot;&gt;&gt;
+  &lt;&lt;set $hp = Math.max(0, $hp - 2)&gt;&gt;
+  &lt;&lt;goto 角色創建&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
 :: 角色創建內容
 
 &lt;p&gt;&lt;b&gt;性別：&lt;/b&gt;&lt;/p&gt;
